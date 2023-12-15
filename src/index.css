@@ -275,7 +275,7 @@ main {
   /* border: 2px solid red; */
   width: 90vw;
   max-width: var(--fixed-width);
-  margin: 5rem 0;
+  margin: 1rem 0;
   background: var(--white);
   border-radius: var(--borderRadius);
   padding: 1.5rem 2rem;
@@ -286,6 +286,7 @@ main {
 }
 .person {
   display: grid;
+  position: relative;
   grid-template-columns: auto 1fr;
   column-gap: 0.75rem;
   margin-bottom: 1.5rem;
@@ -303,4 +304,35 @@ main {
 }
 .person p {
   color: var(--grey-500);
+}
+
+button {
+  width: 100%;
+}
+
+span {
+  position: absolute;
+  top: 45%;
+  right: 10%;
+}
+
+hr {
+  margin-top: 1rem;
+}
+
+.btn-cancel {
+  padding: 4px 8px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #d946ef;
+  color: white;
+}
+
+.btn-cancel:hover {
+  background: var(--primary-700);
+  box-shadow: var(--shadow-3);
 }
